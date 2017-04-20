@@ -12,6 +12,9 @@
 		36A902381E9D95B800E2BE47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A902361E9D95B800E2BE47 /* Main.storyboard */; };
 		36A9023A1E9D95B800E2BE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A902391E9D95B800E2BE47 /* Assets.xcassets */; };
 		36A9023D1E9D95B800E2BE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A9023B1E9D95B800E2BE47 /* LaunchScreen.storyboard */; };
+		36A902451E9DA18500E2BE47 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A902441E9DA18500E2BE47 /* Dish.swift */; };
+		36A902471E9DA5BD00E2BE47 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A902461E9DA5BD00E2BE47 /* DetailViewController.swift */; };
+		A6F0D17074A696D92C7C7A1E /* Pods_ApresCuisine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF2F6CAEB9AEC11204AF2C /* Pods_ApresCuisine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		36A902391E9D95B800E2BE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36A9023C1E9D95B800E2BE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36A9023E1E9D95B800E2BE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A902441E9DA18500E2BE47 /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		36A902461E9DA5BD00E2BE47 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9E52790B76C6C097CFAB9F80 /* Pods-ApresCuisine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApresCuisine.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApresCuisine/Pods-ApresCuisine.release.xcconfig"; sourceTree = "<group>"; };
+		B2DF2F6CAEB9AEC11204AF2C /* Pods_ApresCuisine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApresCuisine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D770719E4DE2DE4EF82AD68F /* Pods-ApresCuisine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApresCuisine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApresCuisine/Pods-ApresCuisine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F0D17074A696D92C7C7A1E /* Pods_ApresCuisine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				36A902311E9D95B800E2BE47 /* ApresCuisine */,
 				36A902301E9D95B800E2BE47 /* Products */,
+				961E66486EDCE03C81199A7C /* Pods */,
+				A253E300097CDAFBB59FB293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,31 @@
 			children = (
 				36A902321E9D95B800E2BE47 /* AppDelegate.swift */,
 				36A902341E9D95B800E2BE47 /* ViewController.swift */,
+				36A902441E9DA18500E2BE47 /* Dish.swift */,
 				36A902361E9D95B800E2BE47 /* Main.storyboard */,
+				36A902461E9DA5BD00E2BE47 /* DetailViewController.swift */,
 				36A902391E9D95B800E2BE47 /* Assets.xcassets */,
 				36A9023B1E9D95B800E2BE47 /* LaunchScreen.storyboard */,
 				36A9023E1E9D95B800E2BE47 /* Info.plist */,
 			);
 			path = ApresCuisine;
+			sourceTree = "<group>";
+		};
+		961E66486EDCE03C81199A7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D770719E4DE2DE4EF82AD68F /* Pods-ApresCuisine.debug.xcconfig */,
+				9E52790B76C6C097CFAB9F80 /* Pods-ApresCuisine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A253E300097CDAFBB59FB293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F6CAEB9AEC11204AF2C /* Pods_ApresCuisine.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36A902411E9D95B800E2BE47 /* Build configuration list for PBXNativeTarget "ApresCuisine" */;
 			buildPhases = (
+				E75ED669AF99E9B20EABB957 /* [CP] Check Pods Manifest.lock */,
 				36A9022B1E9D95B800E2BE47 /* Sources */,
 				36A9022C1E9D95B800E2BE47 /* Frameworks */,
 				36A9022D1E9D95B800E2BE47 /* Resources */,
+				8259B6CB429E50E65953FE80 /* [CP] Embed Pods Frameworks */,
+				34915C71F7A0E31378E1529B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +164,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34915C71F7A0E31378E1529B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApresCuisine/Pods-ApresCuisine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8259B6CB429E50E65953FE80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApresCuisine/Pods-ApresCuisine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75ED669AF99E9B20EABB957 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36A9022B1E9D95B800E2BE47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A902451E9DA18500E2BE47 /* Dish.swift in Sources */,
 				36A902351E9D95B800E2BE47 /* ViewController.swift in Sources */,
 				36A902331E9D95B800E2BE47 /* AppDelegate.swift in Sources */,
+				36A902471E9DA5BD00E2BE47 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +341,7 @@
 		};
 		36A902421E9D95B800E2BE47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D770719E4DE2DE4EF82AD68F /* Pods-ApresCuisine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ApresCuisine/Info.plist;
@@ -270,6 +354,7 @@
 		};
 		36A902431E9D95B800E2BE47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E52790B76C6C097CFAB9F80 /* Pods-ApresCuisine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ApresCuisine/Info.plist;
